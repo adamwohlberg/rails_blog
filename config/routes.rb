@@ -28,7 +28,9 @@ Rails.application.routes.draw do
   #     end
   #   end
 
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   # Example resource route with sub-resources:
   #   resources :products do
